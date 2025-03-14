@@ -12,7 +12,7 @@ app.use(cookieParser());
  
 const allowedOrigins = [
     "http://localhost:3000", 
-    "https://round-robbin-frontend-2kdp9bgvl-anushkas-projects-3b34f5d3.vercel.app/",  
+    "https://round-robbin-frontend-2kdp9bgvl-anushkas-projects-3b34f5d3.vercel.app",  
   ];
   
   
