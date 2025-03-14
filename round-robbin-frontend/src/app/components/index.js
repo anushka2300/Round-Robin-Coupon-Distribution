@@ -18,7 +18,7 @@ export default function Index() {
   const claimCoupon = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/claim`, {
+      const response = await fetch('https://round-robin-coupon-distribution-1.onrender.com/claim', {
         method: "POST",
         credentials: "include",
         headers: {
