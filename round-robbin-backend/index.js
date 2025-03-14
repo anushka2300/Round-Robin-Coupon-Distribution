@@ -20,13 +20,8 @@ app.use(requestIp.mw());
 const Claim = require("./models/claim");
 const Coupon = require("./models/coupon");
 
-const coupons = [
-    { code: "DISCOUNT10", assigned: false },
-    { code: "SAVE20", assigned: false },
-    { code: "FREESHIP", assigned: false }
-  ];
  
-mongoose.connect(process.env.MONGO_CONN, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_CONN)
     .then(async () => {
         const existingCoupons = await Coupon.countDocuments();
         if (existingCoupons === 0) { 
