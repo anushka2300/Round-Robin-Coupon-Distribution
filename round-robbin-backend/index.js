@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cookieParser());
  
 const corsOptions = {
-    origin: "https://round-robbin-frontend-dpe8kxm06-anushkas-projects-3b34f5d3.vercel.app/", 
+    origin: "*", 
     credentials: true,  
 };
 app.use(cors(corsOptions));
