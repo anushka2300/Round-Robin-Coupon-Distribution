@@ -12,7 +12,7 @@ app.use(cookieParser());
  
 const corsOptions = {
     origin: "*", 
-    credentials: true,  
+    credentials: false,  
 };
 app.use(cors(corsOptions));
 
